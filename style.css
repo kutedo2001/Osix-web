@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+}
+
+/*navegacion principal*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.301);
+}
+
+header .logo {
+  position: relative;
+  margin-left: 150px;
+  transition: 0.6s;
+  width: 200px;
+}
+
+.wrapper {
+  height: 60px;
+  width: 35vw;
+  line-height: 60px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -3px -3px 7px rgba(255, 255, 255, 0.05);
+}
+
+header .wrapper nav {
+  position: relative;
+  display: flex;
+}
+
+header .wrapper nav label {
+  flex: 1;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+header .wrapper nav label a {
+  position: relative;
+  z-index: -1;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.6s ease;
+  color: white;
+}
+
+.wrapper nav #Home:checked~label.Home a,
+.wrapper nav #About:checked~label.About a,
+.wrapper nav #Services:checked~label.Services a,
+.wrapper nav #ContactUs:checked~label.ContactUs a,
+.wrapper nav #Team:checked~label.Team a {
+  color: white;
+}
+
+.wrapper nav .tab {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #0059ff, #00f7ff);
+  border-radius: 50px;
+  transition: 0.6s cubic-bezier(0.6, -0.55, 0.265, 1.55);
+}
+
+.wrapper nav #Home:checked~label.home a {
+  color: white;
+}
+
+.wrapper nav #About:checked~.tab {
+  left: 20%;
+}
+
+.wrapper nav #Services:checked~.tab {
+  left: 40%;
+}
+
+.wrapper nav #ContactUs:checked~.tab {
+  left: 60%;
+}
+
+.wrapper nav #Team:checked~.tab {
+  left: 80%;
+}
+
+.wrapper nav input {
+  display: none;
+}
+
+/*fin de navegacion principal*/
+
+/*titulo*/
+.titulo {
+  width: 100%;
+  height: 100vh;
+  background-image: url(imagenes/lake-6003746_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  animation: changeColor 5s linear infinite;
+}
+
+.titulo h1 {
+  margin: auto;
+  font-size: 58px;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+}
+
+.titulo .borde .dot{}
+
+/*fin del titulo*/
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.row {
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.row {
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 40%;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.col[data-scroll="in"] {
+  transform: scale(1);
+  transition: .5s;
+  opacity: 1;
+}
+
+.col[data-scroll="out"] {
+  transform: scale(0.5);
+  transition: .5s;
+  opacity: 0;
+}
