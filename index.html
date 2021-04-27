@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Osix Enterprise</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="transitiosn.js"></script>
 </head>
 
 <body>
@@ -16,10 +17,10 @@
         <div class="wrapper">
             <nav>
                 <input type="radio" name="tab" id="Home" checked>
-                <input type="radio" name="tab" id="About" checked>
-                <input type="radio" name="tab" id="Services" checked>
-                <input type="radio" name="tab" id="ContactUs" checked>
-                <input type="radio" name="tab" id="Team" checked>
+                <input type="radio" name="tab" id="About">
+                <input type="radio" name="tab" id="Services">
+                <input type="radio" name="tab" id="ContactUs">
+                <input type="radio" name="tab" id="Team">
                 <label for="Home" class="Home"><a href="#">Home</a></label>
                 <label for="About" class="About"><a href="#">About</a></label>
                 <label for="Services" class="Services"><a href="#">Services</a></label>
@@ -28,6 +29,16 @@
                 <div class="tab"></div>
             </nav>
         </div>
+        <div class="user">
+            <nav>
+                <input type="radio" name="tab1" id="User" checked>
+                <input type="radio" name="tab1" id="Configuration">
+                <label for="User" class="Home"><a href="#">Home</a></label>
+                <label for="Configuration" class="Configuration"><a href="#">About</a></label>
+                <div class="tab1"></div>
+            </nav>
+        </div>
+
     </header>
     <!--fin navegacion principal-->
     <!--titulo-->
@@ -59,31 +70,79 @@
         </div>
     </section>
     <!--fin del titulo-->
+    <!--servicios-->
     <div class="container">
-        <h1>Scroll</h1>
-        <div class="row">
-            <div class="col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio inventore illo voluptatibus in
-                    doloribus voluptates a sit deserunt porro illum eius tempore, id pariatur voluptatum! Pariatur
-                    corrupti natus doloribus nihil!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, autem. Vitae cumque, soluta, quaerat
-                    amet iure distinctio voluptatibus veniam perferendis omnis eius asperiores! Voluptate facilis,
-                    molestiae laborum fugiat accusamus pariatur.
-                </p>
+        <!--tarjetas productos-->
+        <section class="servicios">
+            <h1>Servicios tanto a particulares como a empresas recien creadas
+            </h1>
+            <div class="contenedor">
+                <div class="linea">
+                    <div class="columna">
+                        <div class="box">
+                            <div class="titulo1"><i class="fa fa-paper-plane"></i>
+                                <h2>Basico</h2>
+                            </div>
+                            <div class="precio">
+                                <h4>25<sup>€</sup></h4>
+                            </div>
+                            <div class="opciones">
+                                <ul>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                </ul>
+                            </div>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="box">
+                            <div class="titulo1"><i class="fa fa-paper-plane"></i>
+                                <h2>Basico</h2>
+                            </div>
+                            <div class="precio">
+                                <h4>25<sup>€</sup></h4>
+                            </div>
+                            <div class="opciones">
+                                <ul>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                </ul>
+                            </div>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <div class="box">
+                            <div class="titulo1"><i class="fa fa-paper-plane"></i>
+                                <h2>Basico</h2>
+                            </div>
+                            <div class="precio">
+                                <h4>25<sup>€</sup></h4>
+                            </div>
+                            <div class="opciones">
+                                <ul>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                    <li><i class="fa fa-check"></i>10GB space</li>
+                                </ul>
+                            </div>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio inventore illo voluptatibus in
-                    doloribus voluptates a sit deserunt porro illum eius tempore, id pariatur voluptatum! Pariatur
-                    corrupti natus doloribus nihil!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, autem. Vitae cumque, soluta, quaerat
-                    amet iure distinctio voluptatibus veniam perferendis omnis eius asperiores! Voluptate facilis,
-                    molestiae laborum fugiat accusamus pariatur.
-                </p>
-            </div>
-        </div>
+        </section>
+        <!--Fin tarjetas productos-->
     </div>
-    <img src="https://cdn.pixabay.com/photo/2015/12/29/14/51/mountains-1112911_1280.jpg" alt="">
 
+
+    <img src="https://cdn.pixabay.com/photo/2015/12/29/14/51/mountains-1112911_1280.jpg" alt="">
 </body>
 
 </html>
