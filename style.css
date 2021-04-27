@@ -75,6 +75,8 @@ header .wrapper nav label a {
 .wrapper nav #ContactUs:checked~label.ContactUs a,
 .wrapper nav #Team:checked~label.Team a {
   color: white;
+  font-weight: bold;
+  text-shadow: -1px 2px 2px rgb(73, 67, 67);
 }
 
 .wrapper nav .tab {
@@ -148,7 +150,6 @@ header .user nav .nav a {
   background: linear-gradient(30deg, #2fb30e, #159ba0);
   transition-delay: .3s;
   color: rgb(255, 255, 255);
-  border-radius: 10px;
 }
 
 .d1,
@@ -208,7 +209,7 @@ header .user nav .nav a {
 
 header .user nav .nav .btn:hover {
   font-weight: bold;
-  text-shadow: -2px 3px 1px rgb(73, 67, 67);
+  text-shadow: 2px -3px 1px rgb(73, 67, 67);
   z-index: 1;
   transform: translatex(10px)
 }
