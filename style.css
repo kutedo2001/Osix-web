@@ -266,7 +266,7 @@ header .user nav label a {
   top: 0;
   left: 0;
   width: 50%;
-  height: 200%;
+  height: 100%;
   background: rgba(255, 255, 255, 0.05);
   transform: skewX(45deg) translateX(870);
   transition: 0.5s;
@@ -327,6 +327,7 @@ header .user nav label a {
   border-radius: 10px;
 }
 
+#contenedor2{margin-top: 100px;}
 /*Fin tarjetas*/
 
 /*Fin productos*/
