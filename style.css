@@ -458,7 +458,7 @@ header .user nav .nav #right:hover {
 
 .contenedorcarta .cartas:hover .contenido {
   opacity: 1;
-  transform: translateY(-20);
+  transform: translateY(-80px);
 }
 
 .contenedorcarta .cartas .contenido .imagen {
@@ -504,7 +504,7 @@ header .user nav .nav #right:hover {
 
 .contenedorcarta .cartas .cli li {
   list-style: none;
-  margin: 0 30px;
+  margin: 0 25px;
   transform: translateY(40px);
   transition: 0.5s;
   opacity: 0;
@@ -512,13 +512,13 @@ header .user nav .nav #right:hover {
 }
 
 .contenedorcarta .cartas:hover .cli li {
-  transform: translateY(0px);
+  transform: translateY(-100px);
   opacity: 1;
 }
 
 .contenedorcarta .cartas .cli li a {
   color: #fff;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .contenedorcarta:hover .cartas {
@@ -539,8 +539,8 @@ header .user nav .nav #right:hover {
 
 
 .iconos a .layer {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s;
 }
 
@@ -560,8 +560,8 @@ header .user nav .nav #right:hover {
 }
 
 .iconos a .layer span.fab {
-  font-size: 20px;
-  line-height: 45px;
+  font-size: 16px;
+  line-height: 35px;
   text-align: center;
 }
 
@@ -609,9 +609,9 @@ header .user nav .nav #right:hover {
 
 .iconos a:hover .textito {
   bottom: -20px;
-  left: -20px;
+  left: 0px;
   opacity: 1;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .iconos a:hover .textito {
@@ -624,19 +624,19 @@ header .user nav .nav #right:hover {
   bottom: -20px;
   left: 10px;
   opacity: 1;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .iconos a:hover #face {
   bottom: -20px;
-  left: -10px;
+  left: 0px;
   opacity: 1;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .iconos a:hover .layer span.fab {
   font-size: 20px;
-  line-height: 45px;
+  line-height: 35px;
   text-align: center;
   font-weight: bold;
   background: rgb(12, 162, 97);
