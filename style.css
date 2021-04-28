@@ -617,7 +617,7 @@ header .user nav .nav #right:hover {
 .iconos a:hover .textito {
   transform: rotate(-5deg)skew(5deg);
   color: white;
-  text-shadow: 1px 1px 4px #17acbd;
+  text-shadow: 1px 1px 3px #17acbd;
 }
 
 .iconos a:hover #twitt {
