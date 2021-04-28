@@ -498,13 +498,13 @@ header .user nav .nav #right:hover {
 
 .contenedorcarta .cartas .cli {
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   display: flex;
 }
 
 .contenedorcarta .cartas .cli li {
   list-style: none;
-  margin: 0 10px;
+  margin: 0 30px;
   transform: translateY(40px);
   transition: 0.5s;
   opacity: 0;
@@ -531,24 +531,117 @@ header .user nav .nav #right:hover {
   transition: 0.5s;
   box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.603), -3px -3px 7px rgba(255, 255, 255, 0.05);
 }
+
 /*fin de cartas*/
 
 /*iconos*/
 
-.iconos{display: inline-flex;}
 
-.iconos a{margin: 0 25px;
-text-decoration: none;
-color: #fff;
-display: block;
-position: relative;
-margin: 50px;}
 
-.iconos a .layer{width: 55px;height: 55px;transition: transform 0.3s;}
+.iconos a .layer {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
 
-.iconos a:hover .layer{transform: rotate(-25deg)skew(20deg);}
+.iconos a:hover .layer {
+  transform: rotate(360deg)skew(20deg);
+}
 
-.iconos a .layer span{position: absolute;top: 0;left: 0;height: 100%;width: 100%;border: 1px solid#fff;border-radius: 5px;transition: all 0.3s;}
+.iconos a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid#fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.iconos a .layer span.fab {
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.iconos a:hover .layer span:nth-child(1) {
+  opacity: 0.2;
+}
+
+.iconos a:hover .layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(2px, -2px);
+}
+
+.iconos a:hover .layer span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(4px, -4px);
+}
+
+.iconos a:hover .layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(6px, -6px);
+}
+
+.iconos a:hover .layer span:nth-child(5) {
+  opacity: 1;
+  transform: translate(8px, -8px);
+}
+
+.iconos a:nth-child(1) .layer span,
+.iconos a:nth-child(1) .textito {
+  font-weight: bold;
+}
+
+.iconos a:nth-child(1) .layer span {
+  box-shadow: -1px 1px 3px #14f339;
+}
+
+.iconos a .textito {
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.iconos a:hover .textito {
+  bottom: -20px;
+  left: -20px;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.iconos a:hover .textito {
+  transform: rotate(-5deg)skew(5deg);
+  color: white;
+  text-shadow: 1px 1px 4px #17acbd;
+}
+
+.iconos a:hover #twitt {
+  bottom: -20px;
+  left: 10px;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.iconos a:hover #face {
+  bottom: -20px;
+  left: -10px;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.iconos a:hover .layer span.fab {
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  font-weight: bold;
+  background: rgb(12, 162, 97);
+}
+
 /*Fin productos*/
 
 img {
