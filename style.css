@@ -5,14 +5,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  display: inline;
-  height: 100%;
-  place-items: center;
-  text-align: center;
-}
-
 /*navegacion principal*/
 
 header {
@@ -24,6 +16,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  place-items: center;
+  text-align: center;
   transition: 0.6s;
   padding: 40px;
   z-index: 100000;
@@ -144,6 +138,8 @@ header .user nav .nav a {
 .btn {
   position: relative;
   transition: all .8s;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.603), -3px -3px 7px rgba(255, 255, 255, 0.05);
+  margin-right: 5px;
 }
 
 .btn:hover {
@@ -176,7 +172,6 @@ header .user nav .nav a {
 .d1 {
   top: 0;
   transform-origin: left;
-  ;
 }
 
 .d2 {
@@ -211,7 +206,14 @@ header .user nav .nav .btn:hover {
   font-weight: bold;
   text-shadow: 2px -3px 1px rgb(73, 67, 67);
   z-index: 1;
-  transform: translatex(10px)
+  transform: translateY(10px);
+}
+
+header .user nav .nav #right:hover {
+  font-weight: bold;
+  text-shadow: 2px -3px 1px rgb(73, 67, 67);
+  z-index: 1;
+  transform: translateY(10px);
 }
 
 /*fin de navegacion principal*/
@@ -406,6 +408,127 @@ header .user nav .nav .btn:hover {
 }
 
 /*Fin tarjetas*/
+
+.cartitas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #161623;
+}
+
+.workers {
+  position: relative;
+}
+
+.contenedorcarta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.contenedorcarta .cartas {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  filter: blur(0px);
+}
+
+.contenedorcarta .cartas .contenido {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.75;
+  transition: 0.5s;
+}
+
+.contenedorcarta .cartas:hover .contenido {
+  opacity: 1;
+  transform: translateY(-20);
+}
+
+.contenedorcarta .cartas .contenido .imagen {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.contenedorcarta .cartas .contenido .imagen img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+}
+
+.contenedorcarta .cartas .contenido .contenidotext h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.contenedorcarta .cartas .contenido .contenidotext h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.contenedorcarta .cartas .cli {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+
+.contenedorcarta .cartas .cli li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.1s * var(--i));
+}
+
+.contenedorcarta .cartas:hover .cli li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.contenedorcarta .cartas .cli li a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.contenedorcarta:hover .cartas {
+  filter: blur(10px);
+  transition: 0.5s;
+}
+
+.contenedorcarta .cartas:hover {
+  filter: blur(0px);
+  transition: 0.5s;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.603), -3px -3px 7px rgba(255, 255, 255, 0.05);
+}
 
 /*Fin productos*/
 
