@@ -409,6 +409,8 @@ header .user nav .nav #right:hover {
 
 /*Fin tarjetas*/
 
+
+/*cartas*/
 .cartitas {
   display: flex;
   justify-content: center;
@@ -529,6 +531,7 @@ header .user nav .nav #right:hover {
   transition: 0.5s;
   box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.603), -3px -3px 7px rgba(255, 255, 255, 0.05);
 }
+/*fin de cartas*/
 
 /*Fin productos*/
 
