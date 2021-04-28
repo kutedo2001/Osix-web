@@ -446,6 +446,38 @@ header .user nav .nav #right:hover {
   filter: blur(0px);
 }
 
+.contenedorcarta .cartas .more {
+  position: absolute;
+  bottom: -60px;
+  display: flex;
+  transform: translateY(100px);
+  transition: 0s;
+  opacity: 0;
+  text-decoration: none;
+}
+
+.contenedorcarta .cartas:hover .more {
+  transform: translateY(-100px);
+  transition: 0.5s;
+  opacity: 1;
+  box-shadow: 0px 0px 2px #14f339;
+}
+
+.contenedorcarta .cartas:hover .more a {
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.contenedorcarta .cartas .more a:hover {
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #14f339;
+  transform: rotate(-5deg)skew(5deg);
+  border: 3px solid #1cae34;
+}
+
 .contenedorcarta .cartas .contenido {
   position: relative;
   display: flex;
@@ -532,11 +564,11 @@ header .user nav .nav #right:hover {
   box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.603), -3px -3px 7px rgba(255, 255, 255, 0.05);
 }
 
+
+
 /*fin de cartas*/
 
 /*iconos*/
-
-
 
 .iconos a .layer {
   width: 30px;
@@ -642,7 +674,7 @@ header .user nav .nav #right:hover {
   background: rgb(12, 162, 97);
 }
 
-/*Fin productos*/
+/*Fin de iconos*/
 
 img {
   width: 100%;
