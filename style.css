@@ -533,6 +533,22 @@ header .user nav .nav #right:hover {
 }
 /*fin de cartas*/
 
+/*iconos*/
+
+.iconos{display: inline-flex;}
+
+.iconos a{margin: 0 25px;
+text-decoration: none;
+color: #fff;
+display: block;
+position: relative;
+margin: 50px;}
+
+.iconos a .layer{width: 55px;height: 55px;transition: transform 0.3s;}
+
+.iconos a:hover .layer{transform: rotate(-25deg)skew(20deg);}
+
+.iconos a .layer span{position: absolute;top: 0;left: 0;height: 100%;width: 100%;border: 1px solid#fff;border-radius: 5px;transition: all 0.3s;}
 /*Fin productos*/
 
 img {
