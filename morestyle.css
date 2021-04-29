@@ -1,0 +1,145 @@
+body {
+    background: #161623;
+}
+
+.contenedorcarta {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.contenedorcarta .cartas {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorcarta .cartas .more {
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    transform: translateY(100px);
+    transition: 0s;
+    opacity: 0;
+    text-decoration: none;
+    background: white;
+    font-size: 30px;
+}
+
+.contenedorcarta .cartas:hover .more {
+    transform: translateY(-100px);
+    transition: 0.5s;
+    opacity: 1;
+    box-shadow: 0px 0px 2px #14f339;
+    text-align: center;
+}
+
+.contenedorcarta .cartas:hover .more a {
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    height: 40px;
+    width: 100px;
+    padding-top: 10px;
+}
+
+.contenedorcarta .cartas .more a:hover {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #14f339;
+    transform: rotate(-5deg)skew(5deg);
+    border: 3px solid #1cae34;
+}
+
+.contenedorcarta .cartas .contenido {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.contenedorcarta .cartas:hover .contenido {
+    transform: translateY(-280px);
+}
+
+.contenedorcarta .cartas .contenido .imagen {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.contenedorcarta .cartas .contenido .imagen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+}
+
+.contenedorcarta .cartas .contenido .contenidotext h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.contenedorcarta .cartas .contenido .contenidotext h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.contenedorcarta .cartas .texto {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.contenedorcarta:hover .cartas {
+    transition: 0.5s;
+}
+
+.contenedorcarta .cartas:hover {
+    transition: 0.5s;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.603), -3px -3px 7px rgba(255, 255, 255, 0.05);
+}
+
+.contenedorcarta .cartas .texto{
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    transform: translateY(100px);
+    transition: 0s;
+    opacity: 0;
+    text-decoration: none;
+    padding: 10px;
+    text-justify: auto;
+}
+
+.contenedorcarta .cartas:hover .texto {
+    width: 90%;
+    height: 400px;
+    transform: translateY(-200px);
+    transition: 0.5s;
+    opacity: 1;
+    box-shadow: 1px 1px 2px #000000;
+    border: 3px solid rgb(255, 255, 255);
+    color: white;
+}
