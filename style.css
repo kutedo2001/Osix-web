@@ -71,6 +71,7 @@ header .wrapper nav label a {
   color: white;
   font-weight: bold;
   text-shadow: -1px 2px 2px rgb(73, 67, 67);
+  z-index: 0;
 }
 
 .wrapper nav .tab {
@@ -866,6 +867,172 @@ header .user nav .nav #right:hover {
 /*Fin de conocenos*/
 
 /*Footter*/
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+footer .foot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+footer .foot .sect {
+  margin-right: 30px;
+}
+
+footer .foot .sect.uno {
+  width: 40%;
+}
+
+footer .foot h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-shadow: 2px -2px 4px rgba(223, 99, 99, 0.344);
+}
+
+footer .foot h2:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+
+footer p {
+  color: #999;
+}
+
+.lis {
+  margin-top: 20px;
+  display: flex;
+}
+
+.lis li {
+  list-style: none;
+}
+
+.lis li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.lis li a:hover {
+  background-color: #f00;
+  box-shadow: 3px 5px 5px rgba(255, 255, 255, 0.582);
+  transition: 1s;
+}
+
+.lis li a .dec {
+  color: #fff;
+  font-size: 20px;
+}
+
+.dos {
+  position: relative;
+  width: 195px;
+}
+
+.dos ul li {
+  list-style: none;
+}
+
+.dos ul li a {
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.dos ul li a:hover {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgba(184, 147, 147, 0.582);
+}
+
+.tres {
+  width: calc(35%-60px);
+  margin-right: 80 !important;
+}
+
+.tres .inf {
+  position: relative;
+}
+
+.tres .inf li {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.tres .inf li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.tres .inf li span {
+  color: #999;
+}
+
+.tres .inf li a {
+  color: #999;
+  text-decoration: none;
+}
+
+.tres .inf li a:hover {
+  color: #fff;
+}
+
+.copi {
+  width: 100%;
+  background: #181818;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999;
+}
+
+@media (max-width: 991px) {
+  footer {
+    padding: 0px;
+  }
+
+  footer .foot .sect {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  footer .foot .sect.uno,
+  .dos,
+  .tres {
+    width: 100%;
+  }
+
+  .copi {
+    padding: 8px 40px;
+  }
+}
 
 img {
   width: 100%;
