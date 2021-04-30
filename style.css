@@ -408,7 +408,7 @@ header .user nav .nav #right:hover {
 }
 
 /*Fin tarjetas*/
-
+/*Fin de produtos*/
 
 /*cartas*/
 .cartitas {
@@ -477,6 +477,7 @@ header .user nav .nav #right:hover {
   transform: rotate(-5deg)skew(5deg);
   border: 3px solid #1cae34;
 }
+
 
 .contenedorcarta .cartas .contenido {
   position: relative;
@@ -563,8 +564,6 @@ header .user nav .nav #right:hover {
   transition: 0.5s;
   box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.603), -3px -3px 7px rgba(255, 255, 255, 0.05);
 }
-
-
 
 /*fin de cartas*/
 
@@ -675,6 +674,192 @@ header .user nav .nav #right:hover {
 }
 
 /*Fin de iconos*/
+
+/*Conocenos*/
+
+.about-section {
+  padding: 10px;
+  background: rgba(108, 119, 117, 0.527);
+}
+
+.section-title h1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  font-size: 48px;
+  text-shadow: 0px 5px 10px rgba(168, 168, 168, 0.685);
+  background: -webkit-linear-gradient(120deg, #045891e3, #1a352fef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px 50px;
+  flex-wrap: 0 0 80%;
+  z-index: 1;
+  position: relative;
+}
+
+.izqui {
+  display: flex;
+  background-size: cover;
+  height: 100%;
+  border-radius: 2%;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cartAU {
+  position: relative;
+  margin-left: 50px;
+  width: 250px;
+  height: 350px;
+  background: rgba(89, 199, 179, 0.692);
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.cartAU:hover {
+  z-index: 1000px;
+  transform: perspective(2000px)rotate(-370deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.cartAU .imgca {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+}
+
+.cartAU:hover .imgca {
+  transform: rotateY(-145deg);
+}
+
+.cartAU .imgca img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 350px;
+}
+
+.cartAU .detalles {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 0;
+}
+
+.cartAU:hover .detalles {
+  opacity: 1;
+}
+
+.cartAU .detalles h2 {
+  margin-bottom: 30px;
+}
+
+.dere {
+  padding: 25px 40px;
+  border: 1p solid #27ae60;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  margin-right: 100px;
+  margin-top: -10px;
+}
+
+.inner-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(108, 119, 117, 0.527);
+  height: 543px;
+  margin-bottom: 60px;
+}
+
+.dere h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 36px;
+  margin-top: revert;
+  text-transform: uppercase;
+  text-shadow: 0px 5px 10px rgba(168, 168, 168, 0.685);
+  background: -webkit-linear-gradient(40deg, #075b92e3, #226d5def);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dere .tt {
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 30px;
+  text-align: justify;
+  margin-top: 50px;
+  height: 280px;
+}
+
+.dere .rede {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.soci {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.ico {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.ico:hover {
+  opacity: 0.7;
+}
+
+.insta {
+  background: #125688;
+  color: white;
+}
+
+.twi {
+  background: #bb0000;
+  color: white;
+}
+
+.fac {
+  background: #3b5998;
+  color: white;
+}
+
+/*Fin de conocenos*/
 
 img {
   width: 100%;
