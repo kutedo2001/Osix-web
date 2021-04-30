@@ -838,10 +838,14 @@ header .user nav .nav #right:hover {
   text-decoration: none;
   border-radius: 50%;
   margin: 15px;
+  opacity: 0.7;
 }
 
 .ico:hover {
-  opacity: 0.7;
+  opacity: 1;
+  transition: .5s;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.582);
+  transform: translateY(-5px)translateX(-5px);
 }
 
 .insta {
@@ -860,6 +864,8 @@ header .user nav .nav #right:hover {
 }
 
 /*Fin de conocenos*/
+
+/*Footter*/
 
 img {
   width: 100%;
