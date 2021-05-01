@@ -126,7 +126,6 @@ header .user nav {
 header .user nav .nav {
   flex: 1;
   width: 100%;
-  z-index: 1;
   position: relative;
   cursor: pointer;
 }
@@ -206,14 +205,12 @@ header .user nav .nav a {
 header .user nav .nav .btn:hover {
   font-weight: bold;
   text-shadow: 2px -3px 1px rgb(73, 67, 67);
-  z-index: 1;
   transform: translateY(10px);
 }
 
 header .user nav .nav #right:hover {
   font-weight: bold;
   text-shadow: 2px -3px 1px rgb(73, 67, 67);
-  z-index: 1;
   transform: translateY(10px);
 }
 
